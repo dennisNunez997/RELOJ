@@ -1,16 +1,16 @@
 # RELOJ
 import time
+
 t = time.localtime()
-hour= t[3]
-min = t[4]
-sec = t[5]
-for hour in range(hour,24):
-    time.sleep(1)
-    for min in range(min,60):
+
+for hour in range(0, 24):  # horas
+    time.sleep(24)
+    for min in range(0,60): # minutos
         time.sleep(1)
-        for k in range(sec,60):
-            time.sleep(0)
-            print(str(hour) + ":" + str(min) + ":" + str(k))
+        # print(i)
+        # os.system("clear")
+        for i in range(0,60): # segundos
+            print(str(hour)+':'+str(min)+':'+str(i))
             time.sleep(1)
 
 
