@@ -1,15 +1,18 @@
 # RELOJ
-Crear un reloj
 import time
 t = time.localtime()
-
-for x in range (0,60):
+hour= t[3]
+min = t[4]
+sec = t[5]
+for hour in range(hour,24):
     time.sleep(1)
-    for y in range (0,60):
+    for min in range(min,60):
         time.sleep(1)
-        for z in range (0,60):
-            print(str(z)+":"+str(y)+":"+str(x))
+        for k in range(sec,60):
+            time.sleep(0)
+            print(str(hour) + ":" + str(min) + ":" + str(k))
             time.sleep(1)
+
 
     
         
